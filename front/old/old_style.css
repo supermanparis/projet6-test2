@@ -1,0 +1,360 @@
+
+body {
+font-family: sans-serif;
+
+}
+
+/* very basic reset */
+
+
+
+h1 {
+text-align: center;
+padding-bottom: 0px;
+padding-top: 2px;
+
+}
+
+imageSliderStyle{
+
+width: 10px;
+
+
+
+}
+
+
+
+body,
+ul {
+margin: 0;
+padding: 0;
+
+}
+
+/*
+make the header
+our first flex container
+*/
+
+header {
+align-items: center;
+display: flex;
+margin: 1em;
+}
+
+/*
+as children of header,
+logo and nav
+become our flex items
+*/
+
+#logo,
+nav {
+flex: 1;
+}
+
+/*
+flex is shorthand for
+flex-grow,
+flex-shrink,
+and flex-basis
+
+this gives us
+auto equal width flex items
+and they are all flexbile ... yay!
+*/
+
+
+
+/*
+make the nav ul
+our second flex container
+*/
+
+nav ul {
+display: flex;
+justify-content: space-around;
+}
+
+/*
+as children of ul,
+all list items
+become flex items
+*/
+
+nav li {
+list-style: none;
+}
+
+
+/* normalize */
+a {
+text-decoration: none;
+}
+
+html, body {
+width: 90%;
+max-width: 1020px;
+background: #CCC;
+
+
+margin-left: auto;
+margin-right: auto;
+}
+
+p {
+margin: 0;
+}
+
+
+
+/* Slider */
+.slick-slider{
+position: relative;
+
+display: block;
+box-sizing: border-box;
+
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+
+-webkit-touch-callout: none;
+-khtml-user-select: none;
+-ms-touch-action: pan-y;
+touch-action: pan-y;
+-webkit-tap-highlight-color: transparent;
+}
+
+.slick-list{
+position: relative;
+
+display: block;
+overflow: hidden;
+
+margin: 0;
+padding: 0;
+}
+.slick-list:focus{
+outline: none;
+}
+.slick-list.dragging{
+cursor: pointer;
+cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list{
+-webkit-transform: translate3d(0, 0, 0);
+-moz-transform: translate3d(0, 0, 0);
+-ms-transform: translate3d(0, 0, 0);
+-o-transform: translate3d(0, 0, 0);
+transform: translate3d(0, 0, 0);
+}
+
+.slick-track{
+position: relative;
+top: 0;
+left: 0;
+
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+.slick-track:before,
+.slick-track:after{
+display: table;
+
+content: '';
+}
+.slick-track:after{
+clear: both;
+}
+.slick-loading .slick-track{
+visibility: hidden;
+}
+
+.slick-slide{
+display: none;
+float: left;
+
+height: 100%;
+min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+float: right;
+}
+.slick-slide img
+{
+display: block;
+}
+.slick-slide.slick-loading img
+{
+display: none;
+}
+.slick-slide.dragging img
+{
+pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+display: block;
+}
+.slick-loading .slick-slide
+{
+visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+display: block;
+
+height: auto;
+
+border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+display: none;
+}
+
+
+
+
+
+
+
+/* slider CSS */
+#promotional_slider {
+width: 90%;
+padding: 20px 50px;
+margin: 0 auto;
+overflow: hidden;
+background: ;
+}
+#promotional_slider .promotionalslider_wrapper {
+width: 100%;
+display: flex;
+/* slick initialized */
+}
+#promotional_slider .promotionalslider_wrapper .slick-arrow {
+font-size: 0;
+width: 40px;
+height: 40px;
+border-radius: 100%;
+-webkit-appearance: none;
+border: 0;
+background: #444;
+box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+outline: none;
+}
+#promotional_slider .promotionalslider_wrapper .slick-arrow:before {
+font-size: 23px;
+color: #FFF;
+}
+#promotional_slider .promotionalslider_wrapper .slick-arrow.slick-next:before {
+content: ">";
+}
+#promotional_slider .promotionalslider_wrapper .slick-arrow.slick-prev:before {
+content: "<";
+}
+#promotional_slider .promotionalslider_wrapper .slick-arrow:hover {
+cursor: pointer;
+}
+#promotional_slider .promotionalslider_wrapper .slick-arrow.slick-disabled {
+opacity: 0.5;
+background: #ccc;
+}
+#promotional_slider .promotionalslider_wrapper .slick-arrow.slick-disabled:hover {
+cursor: not-allowed;
+}
+#promotional_slider .promotionalslider_wrapper.slick-initialized {
+position: relative;
+}
+#promotional_slider .promotionalslider_wrapper.slick-initialized .slick-arrow {
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+z-index: 9;
+}
+#promotional_slider .promotionalslider_wrapper.slick-initialized .slick-next {
+right: -40px;
+}
+#promotional_slider .promotionalslider_wrapper.slick-initialized .slick-prev {
+left: -40px;
+}
+#promotional_slider .promotionalslider_wrapper .promotionalslider_single {
+display: flex;
+width: 25%;
+flex: 0 0 25%;
+flex-direction: column;
+border: 5px solid #444;
+margin: 0 10px;
+}
+#promotional_slider .promotionalslider_wrapper .promotionalslider_single section {
+background: no-repeat center center/cover;
+width: 100%;
+height: 0;
+padding-top: 100%;
+}
+#promotional_slider .promotionalslider_wrapper .promotionalslider_single p {
+background-color: #444;
+color: #FFF;
+text-align: center;
+padding: 10px;
+text-transform: uppercase;
+font-weight: bold;
+font-family: "Arial", sans-serif;
+font-size: 19px;
+}
+
+
+
+
+/* ***************************************** */
+
+/* CSS  Modal (background) */
+
+
+
+
+
+
+/* The Modal (background) */
+.modal {
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 10; /* Sit on top */
+left: 0;
+top: 0;
+width: 100%; /* Full width */
+height: 100%; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+background-color: rgb(0,0,0); /* Fallback color */
+background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+background-color: #fefefe;
+margin: 15% auto; /* 15% from the top and centered */
+padding: 20px;
+border: 1px solid #888;
+width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+color: #aaa;
+float: right;
+font-size: 28px;
+font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+color: black;
+text-decoration: none;
+cursor: pointer;
+}

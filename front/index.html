@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="fr" >
+
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>PROJET6-JUST STREAM IT</title>
+  <link rel="stylesheet" href="style.css" />
+
+<header>
+
+  <h1 id="logo">JUST STREAM IT</h1> 
+  <!--   <img src="./images/juststreamitlogo.png" alt="">   -->
+  
+  <nav>
+    <ul>
+      <li>Accueil</li>
+      <li>Catégories</li>
+      <li>Contact</li>
+    </ul>
+  </nav>
+
+</header>
+
+<!-- AXIOS CDN link  -->
+<script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+
+</head>
+
+
+
+
+
+
+
+
+
+<!-- /////////////////////////////////////////////////////////////////////////////////// -->
+
+<body>
+<h1>MEILLEUR FILM</h1>
+
+<div id="meilleurFilm">
+
+  <img id="imageMeilleurFilm" src="./images/empl_meilleur_film.png">
+  <div class="promotionalslider_wrapper">
+
+</div>
+
+<p id="titreMeilleurFilm"> Titre de la vidéo </p>
+
+<button>Play</button>
+
+
+
+
+<!-- Trigger/ Bouton ouvrir le Modal -->
+<button id="myBtn">Open Modal</button>
+
+<!-- MODAL /////////////////////////////////////////////////////////////////////////////////// -->
+
+
+<div id="myModal" class="modal">
+<!-- Contenu du Modal -->
+<div class="modal-content">
+  <div class="modal-header">
+    <span class="close">&times;</span>
+    <h2 id="titreFilmModal">Titre du Film</h2>
+  </div>
+  <div class="modal-body">
+    <img id = "imageFilmModal">  
+    <p id="genre">Genre complet du film: </p>
+    <p id="date">Date de sortie: </p>
+    <p id="rated"> Son Rated: </p>
+    <p id="score">Score Imdb: </p>
+    <p id="real">Réalisateur: </p>
+    <p id="actors">liste des acteurs: </p>
+    <p id="duree">Durée: </p>
+    <p id="pays">Pays d’origine: </p>
+    <p id="boxOffice">Résultat au Box Office: </p>
+    <p id="resume">Résumé du film: </p>
+  </div>
+  <div class="modal-footer">
+    <h3>JUST STREAM IT</h3>
+  </div>
+</div>
+<!-- fin code bouton Modal ********************************* -->
+
+
+
+</div>
+
+
+<!-- /////////////////////////////////////////////////////////////////////////////////// -->
+
+<H1> FILMS LES MIEUX NOTÉS </H1> 
+
+<div id="promotional_slider">
+
+<div class="promotionalslider_wrapper">
+
+<div class="promotionalslider_single">
+
+  <img id= "mieuxNotesF1" src="./images/empl_meilleur_film.png" alt="">
+
+  <p id="linkF1" hidden >HELLO</p>  <!-- linkF1 = Lien vers Film 1 -->
+</div>
+
+
+<div class="promotionalslider_single">
+
+  <img id= "mieuxNotesF2" src="./images/empl_meilleur_film.png" alt="">
+  <p id="linkF2" hidden >HELLO</p>  <!-- linkF1 = Lien vers Film 2 -->
+</div>
+
+
+<div class="promotionalslider_single">
+  <img id= "mieuxNotesF3" src="./images/empl_meilleur_film.png" alt="">
+  <p id="linkF3" hidden >HELLO</p>  <!-- linkF1 = Lien vers Film 3 -->
+</div>
+
+
+<div class="promotionalslider_single">
+  <img id= "mieuxNotesF4" src="./images/empl_meilleur_film.png" alt="">
+  <p id="linkF4" hidden >HELLO</p>  <!-- linkF1 = Lien vers Film 4 -->
+</div>
+
+
+<div class="promotionalslider_single">
+  <img id= "mieuxNotesF5" src="./images/empl_meilleur_film.png" alt="">
+  <p id="linkF5" hidden >HELLO</p>  <!-- linkF1 = Lien vers Film 5 -->
+</div>
+
+
+<div class="promotionalslider_single">
+  <img id= "mieuxNotesF6" src="./images/empl_meilleur_film.png" alt="">
+  <p id="linkF6" hidden >HELLO</p>  <!-- linkF1 = Lien vers Film 6 -->
+</div>
+
+
+<div class="promotionalslider_single">
+  <img id= "mieuxNotesF7" src="./images/empl_meilleur_film.png" alt="">
+  <p id="linkF7" hidden >HELLO</p>  <!-- linkF1 = Lien vers Film 7 -->
+</div>
+
+
+</div>
+
+</div>
+
+<!-- /////////////////////////////////////////////////////////////////////////////////// -->
+
+
+
+
+
+
+<!-- /////////////////////////////////////////////////////////////////////////////////// -->
+
+<H1> ACTION </H1> 
+
+<div id="promotional_slider">
+
+  <div class="promotionalslider_wrapper">
+
+    <div class="promotionalslider_single">
+      <img id= "cat1F1" src="./images/empl_meilleur_film.png" alt="" >
+      <p id="Lcat1F1" hidden>HELLO</p>  <!-- Lcat1F1 = Lien vers Film 1 de la catégorie 1 -->
+    </div>
+
+    <div class="promotionalslider_single">
+      <img id= "cat1F2" src="./images/empl_meilleur_film.png" alt="">
+      <p id="Lcat1F2" hidden>HELLO</p>
+    </div>
+
+    <div class="promotionalslider_single">
+      <img id= "cat1F3" src="./images/empl_meilleur_film.png" alt="">
+      <p id="Lcat1F3" hidden>HELLO</p>
+    </div>
+
+    <div class="promotionalslider_single">
+      <img id= "cat1F4" src="./images/empl_meilleur_film.png" alt="">
+      <p id="Lcat1F4" hidden>HELLO</p>
+    </div>
+
+    <div class="promotionalslider_single">
+      <img id= "cat1F5" src="./images/empl_meilleur_film.png" alt="">
+      <p id="Lcat1F5" hidden>HELLO</p>
+    </div>
+
+    <div class="promotionalslider_single">
+      <img id= "cat1F6" src="./images/empl_meilleur_film.png" alt="">
+      <p id="Lcat1F6" hidden>HELLO</p>
+    </div>
+
+    <div class="promotionalslider_single">
+      <img id= "cat1F7" src="./images/empl_meilleur_film.png" alt="">
+      <p id="Lcat1F7" hidden>HELLO</p>
+    </div>
+
+
+
+   </div>
+
+</div>
+
+<!-- /////////////////////////////////////////////////////////////////////////////////// -->
+
+
+
+
+
+
+
+<!-- /////////////////////////////////////////////////////////////////////////////////// -->
+<H1> THRILLER </H1> 
+
+<div id="promotional_slider">
+
+  <div class="promotionalslider_wrapper">  <!-- Emballage du slider //////////////////////////////// -->
+
+
+    <div class="promotionalslider_single"> <!-- Emplacement d'une slide du slider //////////////////////////////// -->
+      <img id= "cat2F1" src="./images/empl_meilleur_film.png" alt="">
+      <p id="Lcat2F1" hidden>HELLO</p> <!-- Lcat2F1 = Lien vers Film 1 de la catégorie 2 -->
+    </div>
+
+    <div class="promotionalslider_single">
+      <img id= "cat2F2" src="./images/empl_meilleur_film.png" alt="">
+      <p id="Lcat2F2" hidden>HELLO</p>
+    </div>
+
+    <div class="promotionalslider_single">
+      <img id= "cat2F3" src="./images/empl_meilleur_film.png" alt="">
+      <p id="Lcat2F3" hidden>HELLO</p>
+    </div>
+
+    <div class="promotionalslider_single">
+      <img id= "cat2F4" src="./images/empl_meilleur_film.png" alt="">
+      <p id="Lcat2F4" hidden>HELLO</p>
+    </div>
+
+    <div class="promotionalslider_single">
+      <img id= "cat2F5" src="./images/empl_meilleur_film.png" alt="">
+      <p id="Lcat2F5" hidden>HELLO</p>
+    </div>
+
+    <div class="promotionalslider_single">
+      <img id= "cat2F6" src="./images/empl_meilleur_film.png" alt="">
+      <p id="Lcat2F6" hidden>HELLO</p>
+    </div>
+
+    <div class="promotionalslider_single">
+      <img id= "cat2F7" src="./images/empl_meilleur_film.png" alt="">
+      <p id="Lcat2F7" hidden>HELLO</p>
+    </div>
+
+
+
+   </div>
+
+</div><!-- /////////////////////////////////////////////////////////////////////////////////// -->
+
+
+
+
+
+
+<!-- /////////////////////////////////////////////////////////////////////////////////// -->
+
+<H1> ROMANCE </H1> 
+
+<div id="promotional_slider">
+
+  <div class="promotionalslider_wrapper">
+
+    <div class="promotionalslider_single">
+      <img id= "cat3F1" src="./images/empl_meilleur_film.png" alt="">
+      <p id="Lcat3F1" hidden>HELLO</p>  <!-- Lcat3F1 = Lien vers Film 1 de la catégorie 3 -->
+    </div>
+
+    <div class="promotionalslider_single">
+      <img id= "cat3F2" src="./images/empl_meilleur_film.png" alt="">
+      <p id="Lcat3F2" hidden>HELLO</p>
+    </div>
+
+    <div class="promotionalslider_single">
+      <img id= "cat3F3" src="./images/empl_meilleur_film.png" alt="">
+      <p id="Lcat3F3" hidden>HELLO</p>
+    </div>
+
+    <div class="promotionalslider_single">
+      <img id= "cat3F4" src="./images/empl_meilleur_film.png" alt="">
+      <p id="Lcat3F4" hidden>HELLO</p>
+    </div>
+
+    <div class="promotionalslider_single">
+      <img id= "cat3F5" src="./images/empl_meilleur_film.png" alt="">
+      <p id="Lcat3F5" hidden>HELLO</p>
+    </div>
+
+    <div class="promotionalslider_single">
+      <img id= "cat3F6" src="./images/empl_meilleur_film.png" alt="">
+      <p id="Lcat3F6" hidden>HELLO</p>
+    </div>
+
+    <div class="promotionalslider_single">
+      <img id= "cat3F7" src="./images/empl_meilleur_film.png" alt="">
+      <p id="Lcat3F7" hidden>HELLO</p>
+    </div>
+
+
+
+   </div>
+
+<!-- /////////////////////////////////////////////////////////////////////////////////// -->
+
+
+
+
+
+
+
+
+<!-- Scripts -->
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js'></script><script  src="./script.js"></script>
+
+<!-- AXIOS script -->
+<script src="axios.js"></script>
+
+<!-- Fin Scripts -->
+
+</body>
+
+<br>
+<br>
+
+<footer>
+<center> <p>Tu ne sais pas quoi regarder pour passer une bonne soirée ? Alors JustStreamIt !
+<br>
+<br>
+Abdel Hakim ©. All rights reserved.</p> </center>
+</footer>
+
+
+<br>
+<br><br>
+<br>
+
+</html>
